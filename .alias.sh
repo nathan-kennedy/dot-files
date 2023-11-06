@@ -30,6 +30,8 @@ alias speedtest='speedtest-cli'
 alias pb='pbcopy'
 #Logseq graph database for git version control
 alias notes="cd /Users/nate/Documents/Logseq-git"
+#Git repos directory shortcut
+alias repos="cd ~/git_repos"
 #Flush DNS cache - password needed
 alias dnsflush='sudo killall -HUP mDNSResponder && sudo killall mDNSResponderHelper && sudo dscacheutil -flushcache'
 #alias r='clear && source ~/.zshrc' 
