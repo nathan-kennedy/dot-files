@@ -23,6 +23,7 @@ alias l='ls -lah'
 alias ll='ls -lh'
 alias lsa='ls -lah'
 alias brave='open -a "Brave Browser.app"'
+alias logseq='open -a Logseq'
 alias chathistory='code /Users/nate/Library/Application\ Support/aichat/messages.md'
 #check network speed/quality
 alias speedtest='speedtest-cli'
