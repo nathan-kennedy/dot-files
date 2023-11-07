@@ -21,7 +21,6 @@ alias la='ls -A'
 alias ls='ls -G'
 alias l='ls -lah'
 alias ll='ls -lh'
-alias lsa='ls -lah'
 alias brave='open -a "Brave Browser.app"'
 alias logseq='open -a Logseq'
 alias chathistory='code /Users/nate/Library/Application\ Support/aichat/messages.md'
@@ -36,7 +35,7 @@ alias repos="cd ~/git_repos"
 #Flush DNS cache - password needed
 alias dnsflush='sudo killall -HUP mDNSResponder && sudo killall mDNSResponderHelper && sudo dscacheutil -flushcache'
 #alias r='clear && source ~/.zshrc' 
-alias r='printf "\e[H\e[2J\e[3J" && source ~/.zshrc'
+alias r='clear && source ~/.zshrc'
 
 #full 'ps aux' output sorted by memory (less cmd args, pid, and vsz) with dashed line row separators
 alias psmem="ps aux | sort -nr -k 4 | head -11 | awk 'BEGIN { count=1; } NR==1 {print \"NO   USER               %CPU  %MEM    USAGE   COMMAND\"; print \"---- ------------------- ----- ------ ------- --------------------------------\"} NR > 1 {printf \"%-4d %-20s %-6s %-7s %-8s %s\n\", count++, \$1, \$3, \$4, \$6/1024, \$11; print \"---- ------------------- ----- ------ ------- --------------------------------\"}' | column -t"
