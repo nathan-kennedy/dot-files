@@ -31,4 +31,5 @@ RESET="\033[0m"
 # Print a line with the 8 main terminal background colors as blocks
 echo -e "         T                  ""${BG_BLACK}     ${RESET}${BG_RED}     ${RESET}${BG_GREEN}     ${RESET}${BG_YELLOW}     ${RESET}${BG_BLUE}     ${RESET}${BG_MAGENTA}     ${RESET}${BG_CYAN}     ${RESET}${BG_WHITE}     ${RESET}"
 echo -e "   "
+echo -e "   "
 echo -e "\033[0m\033[1;37mWelcome, $USER! Today is\033[1;32m $(date +"%a %b %e")\033[1;37m\033[0m Happy coding!\033[0m"
