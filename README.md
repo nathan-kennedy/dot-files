@@ -1,6 +1,8 @@
-# dot-files
+# Dot-files for zsh 💻
 
 ### MotD
+
+_This took way longer than it should have, but I like the result. Hope you do too. 👍_
 
 ![alt text](/assets/motd-screen.png)
 
@@ -11,7 +13,7 @@
 **_...._** = back three directories  
 **_....._** = back four directories  
 **_......_** = back five directories  
-**\_** = sudo  
+**\_\_\_** = sudo  
 **_ga_** = git add  
 **_gs_** = git status  
 **_gc_** = git commit -m  
@@ -54,4 +56,12 @@
 
 ### ImageMagick
 
-**_orgimg_** = takes a directory and organizes all images into folders named with the file extension.
+**_orgimg_** = takes a directory and organizes all images into folders named with the file extension.  
+**_jpg2png_** = .jpg and .jpeg conversion to .png  
+**_jpg2webp_** = .jpg and .jpeg conversion to webp  
+**_png2jpg_** = .png conversion to .jpg  
+**_png2webp_** = .png conversion to .webp  
+**_webp2jpg_** = .webp conversion to .jpg  
+**_webp2png_** = .webp conversion to .png  
+**_optjpg_** = optimize all .jpg's in a directory  
+**_optpng_** = optimizw all .png's in a directory

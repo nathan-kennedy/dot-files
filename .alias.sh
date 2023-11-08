@@ -52,4 +52,4 @@ alias grep='grep --color=auto'
 alias egrep='grep -E --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
 alias fgrep='grep -F --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
 #open zshrc config and MOTD in VS Code
-alias zsh='code ~/.zshrc ~/.zsh/.motd.sh ~/.zsh/.functions.sh ~/.zsh/.alias.sh'
+alias zsh='code ~/.zshrc ~/.zsh/.alias.sh ~/.zsh/.motd.sh ~/.zsh/.functions.sh'
