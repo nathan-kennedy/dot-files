@@ -12,8 +12,8 @@ _This took way longer than it should have, but I like the result, and the termin
 **_..._** = back two directories  
 **_...._** = back three directories  
 **_....._** = back four directories  
-**_......_** = back five directories
-**_ave_** = ansible-vault encrypt
+**_......_** = back five directories  
+**_ave_** = ansible-vault encrypt  
 **_avd_** = ansible-vault decrypt  
 **\_** = sudo  
 **_ga_** = git add  
@@ -38,7 +38,7 @@ _This took way longer than it should have, but I like the result, and the termin
 **_pb_** = copy to clipboard via piping  
 **_notes_** = LogSeq git repository  
 **_repos_** = git repositories directory  
-**_trash_** = trash with Finder instead of system API
+**_trash_** = trash with Finder instead of system API  
 **_dnsflush_** = flush DNS cache (password needed)  
 **_r_** = clear && source ~/.zshrc  
 **_psmem_** = list computer processes by memory use with clean formatting  
