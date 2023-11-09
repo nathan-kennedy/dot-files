@@ -15,7 +15,7 @@ _This took way longer than it should have, but I like the result. Hope you do to
 **_......_** = back five directories
 **_ave_** = ansible-vault encrypt
 **_avd_** = ansible-vault decrypt  
-**\_\_\_** = sudo  
+**\_** = sudo  
 **_ga_** = git add  
 **_gs_** = git status  
 **_gc_** = git commit -m  
