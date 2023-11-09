@@ -34,6 +34,8 @@ alias pb='pbcopy'
 alias notes="cd '$HOME/Documents/Logseq-git/Logseq Personal Graph - git repo'"
 #Git repos directory shortcut
 alias repos="cd ~/git_repos"
+#Trash uses Finder trash instead of sysrem API to esure 'allow putback'
+alias trash='trash -F'
 #Flush DNS cache - password needed
 alias dnsflush='sudo killall -HUP mDNSResponder && sudo killall mDNSResponderHelper && sudo dscacheutil -flushcache'
 #alias r='clear && source ~/.zshrc' 
