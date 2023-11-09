@@ -36,6 +36,7 @@ _This took way longer than it should have, but I like the result. Hope you do to
 **_pb_** = copy to clipboard via piping  
 **_notes_** = LogSeq git repository  
 **_repos_** = git repositories directory  
+**_trash_** = trash with Finder instead of system API
 **_dnsflush_** = flush DNS cache (password needed)  
 **_r_** = clear && source ~/.zshrc  
 **_psmem_** = list computer processes by memory use with clean formatting  
@@ -52,7 +53,7 @@ _This took way longer than it should have, but I like the result. Hope you do to
 
 ### Git
 
-**_acp_** = git automation - check for changes to commit, then git add -A, git commit -m, and git push origin {current branch}.
+**_acp_** = git automation - check for changes to commit, then git add -A, git commit -m, and git push origin {current branch}. No need to use quotes for commit message.
 
 ### ImageMagick
 
