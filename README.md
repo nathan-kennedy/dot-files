@@ -12,7 +12,9 @@ _This took way longer than it should have, but I like the result. Hope you do to
 **_..._** = back two directories  
 **_...._** = back three directories  
 **_....._** = back four directories  
-**_......_** = back five directories  
+**_......_** = back five directories
+**_ave_** = ansible-vault encrypt
+**_avd_** = ansible-vault decrypt  
 **\_\_\_** = sudo  
 **_ga_** = git add  
 **_gs_** = git status  
