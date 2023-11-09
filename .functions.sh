@@ -1,5 +1,5 @@
 ## GIT FUNCTIONS ##
-#git add, commit -m, push function
+#git add, commit -m, push function (no need to use quotes for commit message 😉)
 function acp() {
   # Check if there are any changes to add
   if [ -z "$(git status --porcelain)" ]; then
@@ -13,15 +13,17 @@ function acp() {
     return 1
   fi
 
+  # Concatenate all arguments into one commit message
+  local message="$*"
+
   # Add all changes
   git add -A
 
-  # Commit the changes
-  git commit -m "$1"
+  # Commit the changes with the concatenated message
+  git commit -m "$message"
 
-  # Push the changes
-  # You might want to specify the branch and remote, or leave as is to use defaults
-  git push origin $(git branch --show-current)
+  # Push the changes to the master branch
+  git push origin master
 }
 
 ## IMAGE MANIPULATION FUNCTIONS ##

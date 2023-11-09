@@ -31,7 +31,7 @@ alias speedtest='speedtest-cli'
 #copy to clipboard (paste board)
 alias pb='pbcopy'
 #Logseq graph database for git version control
-alias notes="cd /Users/nate/Documents/Logseq-git"
+alias notes="cd '$HOME/Documents/Logseq-git/Logseq Personal Graph - git repo'"
 #Git repos directory shortcut
 alias repos="cd ~/git_repos"
 #Flush DNS cache - password needed
