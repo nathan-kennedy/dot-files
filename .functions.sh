@@ -52,6 +52,12 @@ function webp2jpg() {
 function webp2png() {
   ~/.zsh-scripts/.webp2png.sh "$@"
 }
+function pdf2jpg() {
+  ~/.zsh-scripts/.pdf2jpg.sh "$@"
+}
+function jpg2pdf() {
+  ~/.zsh-scripts/.jpg2pdf.sh "$@"
+}
 
 #Image optimization functions
 function optjpg() {
