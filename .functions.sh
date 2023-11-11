@@ -1,4 +1,22 @@
+## MISCELANEOUS FUNCTIONS ##
+
+#Symlink creation function that backs up a file or directory and then turns it into a symlink
+function symlink () {
+  if [ -e "$1" ]; then
+    # Create a timestamp for the backup
+    timestamp=$(date +"%Y%m%d%H%M%S")
+    # Rename using the timestamp to avoid conflicts
+    mv "$1" "$1.backup.$timestamp"
+    ln -sf "$2" "$1"
+  else
+    echo "$1 does not exist."
+    return 1
+  fi
+}
+
+
 ## GIT FUNCTIONS ##
+
 #git add, commit -m, push function (no need to use quotes for commit message 😉)
 function acp() {
   # Check if there are any changes to add
