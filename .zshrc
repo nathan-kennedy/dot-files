@@ -43,6 +43,7 @@ setopt HIST_SAVE_NO_DUPS # Don't write duplicates to the history file
 HISTSIZE=5000            # Keep 5000 entries in memory
 SAVEHIST=10000           # Save 10000 entries to the history file
 HISTFILE=~/.zsh_history  # Set the location of the history file
+HISTTIMEFORMAT="%Y -%m -%d %T "
 
 # Enable colored man pages for better readability
 export LESS_TERMCAP_mb=$'\E[01;31m'       # Begin blinking
