@@ -4,12 +4,12 @@ precmd() { vcs_info }
 
 # Customize the version control information format for git repositories
 # This sets the branch name to appear in red and the git icon in yellow
-zstyle ':vcs_info:git:*' formats '%F{yellow}   %f%F{yellow}%b %f'
+zstyle ':vcs_info:git:*' formats '%F{yellow}  󰘬 %f%F{yellow}%b %f'
  
 # Configure the prompt appearance
 # Displays an arrow, the directory path, the git branch, and a symbol before the cursor
 setopt PROMPT_SUBST
-PROMPT='%F{magenta}%f %F{yellow}%f %F{green}%n%f %F{yellow} %f %F{blue}${PWD/#$HOME/~}%f ${vcs_info_msg_0_}%F{magenta} %f'
+PROMPT='%F{magenta}%f %F{yellow} %f%F{green}%n%f %F{yellow} %f %F{blue}${PWD/#$HOME/~}%f ${vcs_info_msg_0_}%F{magenta} %f'
 
 # Set directory and file color scheme for 'ls' and 'grep' commands
 export LSCOLORS=ExFxBxDxCxegedabagacad
