@@ -66,6 +66,8 @@ _This took way longer than it should have, but I like the result, hope you do to
 **_png2webp_** = .png conversion to .webp  
 **_webp2jpg_** = .webp conversion to .jpg  
 **_webp2png_** = .webp conversion to .png  
+**_pdf2jpg_** = .png coversion to .jpg  
+**_vector2png_** = .ai, .eps, or .svg conversion to .png
 **_optjpg_** = optimize all .jpg's in a directory  
 **_optpng_** = optimizw all .png's in a directory
 
