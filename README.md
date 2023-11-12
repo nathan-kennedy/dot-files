@@ -12,7 +12,9 @@ _This took way longer than it should have, but I like the result, hope you do to
 **_..._** = back two directories  
 **_...._** = back three directories  
 **_....._** = back four directories  
-**_......_** = back five directories  
+**_......_** = back five directories
+**_home_** = home directory
+**_root_** = root directory
 **_ave_** = ansible-vault encrypt  
 **_avd_** = ansible-vault decrypt  
 **\_** = sudo  
