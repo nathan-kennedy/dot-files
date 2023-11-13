@@ -70,6 +70,7 @@ _This took way longer than it should have, but I like the result, hope you do to
 **_webp2png_** = .webp conversion to .png  
 **_pdf2jpg_** = .png coversion to .jpg  
 **_vector2png_** = .ai, .eps, or .svg conversion to .png
+**_heic2jpg_** = Apple's latest HEIC image conversion to .jpg
 **_optjpg_** = optimize all .jpg's in a directory  
 **_optpng_** = optimizw all .png's in a directory
 

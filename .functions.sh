@@ -79,6 +79,9 @@ function jpg2pdf() {
 function vector2png() {
   ~/.zsh-scripts/.vector2png.sh "$@"
 }
+function heic2jpg() {
+  ~/.zsh-scripts/.heic2jpg.sh "$@"
+}
 
 #Image optimization functions
 function optjpg() {
