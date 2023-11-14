@@ -25,6 +25,9 @@ alias rms='rm -i -v'
 alias la='ls -A'
 alias ls='ls -G'
 alias l='ls -lah'
+#exa alias with all the fixin's
+alias ll='exa -lhaUm --git --group-directories-first -s=type'
+alias ld='exa -lhUmD --git'
 alias chathistory='code $HOME/Library/Application\ Support/aichat/messages.md'
 #check network speed/quality
 alias speedtest='speedtest-cli'
