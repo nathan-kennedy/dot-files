@@ -33,7 +33,7 @@ alias l='ls -lah'
 #exa alias with all the fixin's
 alias ll='exa -lhaUm --git --group-directories-first -s=type'
 #exa directories only alias with all the fixin's
-alias ld='exa -lhUmD --git'
+alias ld='exa -lhUmaD --git'
 #exa files only alias with all the fixin's
 alias lf='exa -lhUmaF | grep -v "/$"'
 #open aichat history in vscode
