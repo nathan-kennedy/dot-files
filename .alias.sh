@@ -54,11 +54,10 @@ alias dnsflush='sudo killall -HUP mDNSResponder && sudo killall mDNSResponderHel
 alias zsh='code ~/.zshrc ~/.zsh/.alias.sh ~/.zsh/.motd.sh ~/.zsh/.functions.sh'
 #simplified 'du' with nice formatting
 alias dusage="du -hd 1 | sort -hr | awk 'BEGIN { print \"SIZE     DIRECTORY\"; print \"------------------\" } { print \$1, \$2 }'"
+#full 'ps aux' output sorted by memory (less cmd args, pid, and vsz) with dashed line row separators
+alias psmem="ps aux | sort -nr -k 4 | head -11 | awk 'BEGIN { count=1; } NR==1 {print \"NO   USER               %CPU  %MEM    USAGE   COMMAND\"; print \"---- ------------------- ----- ------ ------- --------------------------------\"} NR > 1 {printf \"%-4d %-20s %-6s %-7s %-8s %s\n\", count++, \$1, \$3, \$4, \$6/1024, \$11; print \"---- ------------------- ----- ------ ------- --------------------------------\"}' | column -t"
+#full 'ps aux' output sorted by cpu (less cmd args, pid, and vsz) with dashed line row separators
+alias pscpu="ps aux | sort -nr -k 3 | head -11 | awk 'BEGIN { count=1; } NR==1 {print \"NO   USER               %CPU  %MEM    USAGE   COMMAND\"; print \"---- ------------------- ----- ------ ------- --------------------------------\"} NR > 1 {printf \"%-4d %-20s %-6s %-7s %-8s %s\n\", count++, \$1, \$3, \$4, \$6/1024, \$11; print \"---- ------------------- ----- ------ ------- --------------------------------\"}' | column -t"
 ##Apps
 alias brave='open -a "Brave Browser.app"'
 alias logseq='open -a Logseq'
-##Depricated alias
-#full 'ps aux' output sorted by memory (less cmd args, pid, and vsz) with dashed line row separators
-#alias psmem="ps aux | sort -nr -k 4 | head -11 | awk 'BEGIN { count=1; } NR==1 {print \"NO   USER               %CPU  %MEM    USAGE   COMMAND\"; print \"---- ------------------- ----- ------ ------- --------------------------------\"} NR > 1 {printf \"%-4d %-20s %-6s %-7s %-8s %s\n\", count++, \$1, \$3, \$4, \$6/1024, \$11; print \"---- ------------------- ----- ------ ------- --------------------------------\"}' | column -t"
-#full 'ps aux' output sorted by cpu (less cmd args, pid, and vsz) with dashed line row separators
-#alias pscpu="ps aux | sort -nr -k 3 | head -11 | awk 'BEGIN { count=1; } NR==1 {print \"NO   USER               %CPU  %MEM    USAGE   COMMAND\"; print \"---- ------------------- ----- ------ ------- --------------------------------\"} NR > 1 {printf \"%-4d %-20s %-6s %-7s %-8s %s\n\", count++, \$1, \$3, \$4, \$6/1024, \$11; print \"---- ------------------- ----- ------ ------- --------------------------------\"}' | column -t"
