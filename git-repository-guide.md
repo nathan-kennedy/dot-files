@@ -54,18 +54,18 @@
 
 ---
 
-### **Step 4: Add, Commit, and Push README.md**
+### **Step 4: Add, Commit, and Push**
 
 1. Add the README file to your local repository:
 
    ```bash
-   git add README.md
+   git add -A
    ```
 
 2. Commit your changes with a message:
 
    ```bash
-   git commit -m "Add README.md"
+   git commit -m "Initial commit"
    ```
 
 3. Push your changes to GitHub:
@@ -115,7 +115,25 @@ git pull origin master
 
 ### **Step 4: Add, Commit, and Push Your Local Files**
 
-(Follow the steps for adding, committing, and pushing changes.)
+1. Add the README file to your local repository:
+
+   ```bash
+   git add -A
+   ```
+
+2. Commit your changes with a message:
+
+   ```bash
+   git commit -m "Initial commit"
+   ```
+
+3. Push your changes to GitHub:
+
+   ```bash
+   git push origin master
+   ```
+
+   (Replace `master` with `main` or your branch name as needed.)
 
 ---
 
