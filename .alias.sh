@@ -43,7 +43,7 @@ alias speedtest='speedtest-cli'
 #copy to clipboard (paste board)
 alias pb='pbcopy'
 #Logseq graph database for git version control
-alias notes="cd '$HOME/Documents/Logseq-git/Logseq Personal Graph - git repo'"
+alias notes="cd '$HOME/Documents/Logseq-git/Logseq-PKB'"
 #Git repos directory shortcut
 alias repos="cd ~/git_repos"
 #Trash uses Finder trash instead of sysrem API to esure 'allow putback'
