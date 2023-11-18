@@ -51,7 +51,7 @@ alias trash='trash -F'
 #Flush DNS cache - password needed
 alias dnsflush='sudo killall -HUP mDNSResponder && sudo killall mDNSResponderHelper && sudo dscacheutil -flushcache'
 #open zshrc config and MOTD in VS Code
-alias zsh='code ~/.zshrc ~/.zsh/.alias.sh ~/.zsh/.motd.sh ~/.zsh/.functions.sh'
+alias zshrc='code ~/.zshrc ~/.zsh/.alias.sh ~/.zsh/.motd.sh ~/.zsh/.functions.sh'
 #simplified 'du' with nice formatting
 alias dusage="du -hd 1 | sort -hr | awk 'BEGIN { print \"SIZE     DIRECTORY\"; print \"------------------\" } { print \$1, \$2 }'"
 #full 'ps aux' output sorted by memory (less cmd args, pid, and vsz) with dashed line row separators

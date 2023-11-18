@@ -1,3 +1,5 @@
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+
 # Load version control information for use in the prompt
 autoload -Uz vcs_info
 precmd() { vcs_info }
@@ -35,16 +37,14 @@ zstyle ':completion:*' menu select
 # Configure how the command line tries to auto-correct and match your input
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-# History configuration: how history entries are recorded and how duplicates are handled
-#setopt HIST_IGNORE_SPACE # Ignore entries that start with a space
-setopt HIST_IGNORE_DUPS        # Ignore duplicate entries
-setopt HIST_FIND_NO_DUPS       # Find command without duplicates
-setopt HIST_SAVE_NO_DUPS       # Don't write duplicates to the history file
-setopt INC_APPEND_HISTORY_TIME # Append the timestamp to the history file
-HISTFILE=~/.zsh_history        # Set the location of the history file
-HISTSIZE=5000                  # Keep 5000 entries in memory
-SAVEHIST=10000                 # Save 10000 entries to the history file
-HISTTIMEFORMAT="%Y -%m -%d %T "
+HISTFILE=~/.zsh_history
+HISTSIZE=5000
+SAVEHIST=10000
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt EXTENDED_HISTORY   
+# export HIST_STAMPS="mm/dd/yyyy"
+
 
 # Enable colored man pages for better readability
 export LESS_TERMCAP_mb=$'\E[01;31m'       # Begin blinking
