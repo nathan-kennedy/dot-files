@@ -2,7 +2,7 @@
 
 ### MotD
 
-_This took way longer than it should have, but I like the result, hope you do too. The terminal window needs to be pretty small before the formatting is broken. 👍_
+_This took way longer than it should have, but I like the result, hope you do too. The terminal window needs to be pretty small width-wise before the formatting is broken so there shouldn't be any problems there. 👍_
 
 ![alt text](/assets/motd-screen.png)
 
