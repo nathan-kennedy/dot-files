@@ -22,6 +22,7 @@ setopt AUTO_CD
 # Load and initialize the completion system, providing options and file paths predictions
 autoload -Uz compinit
 compinit
+_comp_options+=(globdots) #incluse hidden files
 
 # Load syntax highlighting, which provides different coloring for commands, options, paths, etc.
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
