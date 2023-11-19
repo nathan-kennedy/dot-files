@@ -1,0 +1,118 @@
+# The format for the entire prompt
+format = """
+[](yellow)\
+$os\
+$username\
+[](bg:blue fg:yellow)\
+$directory\
+[](fg:blue bg:cyan)\
+$git_branch\
+[](fg:cyan bg:green)\
+$c\
+$elixir\
+$elm\
+$golang\
+$gradle\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+$scala\
+[](fg:green bg:bright-black)\
+$time\
+[ ](fg:bright-black)\
+"""
+
+[username]
+show_always = true
+style_user = "bg:yellow"
+style_root = "bg:yellow"
+format = '[  $user ]($style)'
+
+[os]
+style = "bg:yellow"
+
+[directory]
+style = "bg:blue"
+format = "[  $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[c]
+symbol = " "
+style = "bg:cyan"
+format = '[ $symbol ($version) ]($style)'
+
+[docker_context]
+symbol = " "
+style = "bg:cyan"
+format = '[ $symbol $context ]($style) $path'
+
+[elixir]
+symbol = " "
+style = "bg:cyan"
+format = '[ $symbol ($version) ]($style)'
+
+[elm]
+symbol = " "
+style = "bg:cyan"
+format = '[ $symbol ($version) ]($style)'
+
+[git_branch]
+symbol = ""
+style = "bg:cyan"
+format = '[ $symbol ($branch) ]($style)'
+
+[git_status]
+style = "bg:green fg:red"
+
+[golang]
+symbol = " "
+style = "bg:green"
+format = '[ $symbol ($version) ]($style)'
+
+[gradle]
+style = "bg:green"
+
+[haskell]
+symbol = " "
+style = "bg:green"
+format = '[ $symbol ($version) ]($style)'
+
+[java]
+symbol = " "
+style = "bg:green"
+format = '[ $symbol ($version) ]($style)'
+
+[julia]
+symbol = " "
+style = "bg:green"
+format = '[ $symbol ($version) ]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:green"
+format = '[ $symbol ($version) ]($style)'
+
+[nim]
+symbol = "󰆥 "
+style = "bg:green"
+format = '[ $symbol ($version) ]($style)'
+
+[rust]
+symbol = ""
+style = "bg:green"
+format = '[ $symbol ($version) ]($style)'
+
+[scala]
+symbol = " "
+style = "bg:green"
+format = '[ $symbol ($version) ]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:bright-black"
+format = '[   $time ]($style)'
