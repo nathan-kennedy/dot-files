@@ -60,3 +60,5 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m' # Begin underline
 source ~/.zsh/.motd.sh      # Load a custom message of the day script
 source ~/.zsh/.alias.sh     # Load a custom aliases script
 source ~/.zsh/.functions.sh # Load a custom functions script
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+eval "$(starship init zsh)"
