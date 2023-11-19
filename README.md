@@ -79,3 +79,15 @@ _If my skull ascii is too much you could always change the .zshrc to load neofet
 ### Miscelaneous
 
 **_symlink_** = creates a backup of a directory and then creates a symlink of the directory with the original name
+
+## Starship .config file
+
+I've set up the starship.toml config file to have the prompt look like the powerline prompt. I've set it up using iterm2 so the colors may be broken on an other terminal app. Also 'magenta' wasn't working for some reason. Not sure if it's a bug with starship or with iterm2. I got around it by hard-coding the color with a hex color.
+You'll want these two lines at the bottom of your .zshrc:
+
+```zsh
+export STARSHIP_CONFIG=~/path/to/starship.toml
+eval "$(starship init zsh)"
+```
+
+If you're using my 'new-mac-setup' script, it will automatically retrieve my dot files and so the lines will be there but since my actual dot files are in this repo the 'path/to/starship.toml' is a symlink and you'll want to change that anyway. For reference my symlink is in `~/.config/starship/starship.toml`.
