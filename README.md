@@ -23,7 +23,7 @@ _This took way longer than it should have, but I like the result, hope you do to
 **_gc_** = git commit -m  
 **_gp_** = git push origin master  
 **_rm_** = verbose remove w/ confirmation over 3 files  
-**_c_** = clear and load message of the day  
+**_c_** = clear and load neofetch (for when skulls are too edgelord)  
 **_mkcd_** = make directory and cd into it  
 **_md_** = mkdir  
 **_rmd_** = rmdir (verbose)  
