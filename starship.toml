@@ -1,13 +1,13 @@
 format = """
-[](yellow)\
 $os\
+[](bg:yellow fg:#c42d93)\
 $username\
 [](bg:blue fg:yellow)\
 $directory\
-[](fg:blue bg:green)\
+[](fg:blue bg:bright-green)\
 $git_branch\
 $git_status\
-[](fg:green bg:cyan)\
+[](fg:bright-green bg:green)\
 $c\
 $elixir\
 $elm\
@@ -20,15 +20,15 @@ $nodejs\
 $nim\
 $rust\
 $scala\
-[](fg:cyan bg:black)\
+[](fg:green bg:cyan)\
 $docker_context\
-[](fg:black bg:bright-black)\
+[](fg:cyan bg:bright-black)\
 $time\
 [ ](fg:bright-black)\
 """
 
 # Disable the blank line at the start of the prompt
-add_newline = false
+add_newline = true
 
 # You can also replace your username with a neat symbol like   or disable this
 # and use the os module below
@@ -36,13 +36,13 @@ add_newline = false
 show_always = true
 style_user = "bg:yellow"
 style_root = "bg:yellow"
-format = '[ $user ]($style)'
+format = '[  $user ]($style)'
 disabled = false
 
 # An alternative to the username module which displays a symbol that
 # represents the current operating system
 [os]
-style = "bg:yellow"
+style = "bg:#c42d93"
 format = '[  ]($style)'
 disabled = false # Disabled by default
 
@@ -67,76 +67,76 @@ truncation_symbol = "…/"
 
 [c]
 symbol = " "
-style = "bg:cyan"
+style = "bg:green"
 format = '[ $symbol ($version) ]($style)'
 
 [docker_context]
 symbol = " "
-style = "bg:black"
+style = "bg:cyan"
 format = '[ $symbol $context ]($style) $path'
 
 [elixir]
 symbol = " "
-style = "bg:cyan"
+style = "bg:green"
 format = '[ $symbol ($version) ]($style)'
 
 [elm]
 symbol = " "
-style = "bg:cyan"
+style = "bg:green"
 format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = ""
-style = "bg:green"
+style = "bg:bright-green"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:green"
+style = "bg:bright-green"
 format = '[ $all_status$ahead_behind$up_to_date ]($style)'
 up_to_date = '✓'
 
 [golang]
 symbol = " "
-style = "bg:cyan"
+style = "bg:green"
 format = '[ $symbol ($version) ]($style)'
 
 [gradle]
-style = "bg:cyan"
+style = "bg:green"
 format = '[ $symbol ($version) ]($style)'
 
 [haskell]
 symbol = " "
-style = "bg:cyan"
+style = "bg:green"
 format = '[ $symbol ($version) ]($style)'
 
 [java]
 symbol = " "
-style = "bg:cyan"
+style = "bg:green"
 format = '[ $symbol ($version) ]($style)'
 
 [julia]
 symbol = " "
-style = "bg:cyan"
+style = "bg:green"
 format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:cyan"
+style = "bg:green"
 format = '[ $symbol ($version) ]($style)'
 
 [nim]
 symbol = "󰆥 "
-style = "bg:cyan"
+style = "bg:green"
 format = '[ $symbol ($version) ]($style)'
 
 [rust]
 symbol = ""
-style = "bg:cyan"
+style = "bg:green"
 format = '[ $symbol ($version) ]($style)'
 
 [scala]
 symbol = " "
-style = "bg:cyan"
+style = "bg:green"
 format = '[ $symbol ($version) ]($style)'
 
 [time]
