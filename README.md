@@ -85,7 +85,7 @@ _If my skull ascii is too much you could always change the .zshrc to load neofet
 I've set up the starship.toml config file to have the prompt look like the powerline prompt. I've set it up using iterm2 so the colors may be broken on an other terminal app. Also 'magenta' wasn't working for some reason. Not sure if it's a bug with starship or with iterm2. I got around it by hard-coding the color with a hex color. Also, this is obviously overboard for some people. You can simply delete the sections you don't want from the 'format' block at the top of 'starship.toml'. You don't have to worry about deleting formatting and styling blocks lower in the file.
 Example - delete these lines for a minimalist prompt:
 
-```toml
+```txt
 $os\
 [](fg:#d455d6 bg:bright-red)\
 $shell\
