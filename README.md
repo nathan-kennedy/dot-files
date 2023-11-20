@@ -93,9 +93,11 @@ export STARSHIP_CONFIG=~/path/to/starship.toml
 eval "$(starship init zsh)"
 ```
 
+If you're using my 'new-mac-setup' script, it will automatically retrieve my dot files and so the lines will be there but since my actual dot files are in this repo the 'path/to/starship.toml' is a symlink and you'll want to change that anyway. For reference my symlink is in `~/.config/starship/starship.toml`.
+
+### Where's my minimalist prompt? 🧐
+
 This is obviously overboard for some people. You can simply delete the sections you don't want from the 'format' block at the top of 'starship.toml'. You don't have to worry about deleting formatting and styling blocks lower in the file.
 Example - delete these lines for a minimalist prompt with only the user name, directories, git branch & status, and last-command status:
 
 ![lines to delete in starship.toml file for minimalist prompt](/assets/minimal.png)
-
-If you're using my 'new-mac-setup' script, it will automatically retrieve my dot files and so the lines will be there but since my actual dot files are in this repo the 'path/to/starship.toml' is a symlink and you'll want to change that anyway. For reference my symlink is in `~/.config/starship/starship.toml`.
