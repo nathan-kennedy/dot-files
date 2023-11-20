@@ -17,7 +17,6 @@ echo "     ${white}5@G?J!J@B!:  ^G5J^             " "${BG_WHITE}     ${RESET}${B
 echo "     ${white}~PB#&@BJ~^:                    " "${BG_BWHITE}     ${RESET}${BG_BMAGENTA}     ${RESET}${BG_BRED}     ${RESET}${BG_BYELLOW}     ${RESET}${BG_BBLUE}     ${RESET}${BG_BCYAN}     ${RESET}${BG_BGREEN}     ${RESET}${BG_BBLACK}     ${RESET}"                                                                
 echo "       ${white}...7.                        "                                                     
 echo "                              "
-echo "                              "
 # Color variables with background colors
 BG_BLACK="\033[0;40m"
 BG_RED="\033[0;41m"
