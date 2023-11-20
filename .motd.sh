@@ -1,25 +1,21 @@
-echo "               ${white}.:^~~~~~^:          "           
-echo "           ${white}^7YG#&@@@@@@@&B57:      "           
-echo "        ${white}^JB@@@@@@@@@@@@@@@@@&G7.   "           
-echo "      ${white}^5@@@@@@@@@@@@@@@@@@@@@@@B7  "           
-echo "     ${white}J@@@@@@@@@@@@@@@@@@@@@@@@@@@5 "           
-echo "    ${white}5@@@@@@@@@@@@@@@@@@@@@@@@#B&B@~  ${magenta}dMMMMMP ${bmagenta}.dMMMb   dMP dMP              "
-echo "   ${white}?@@@@@@@@@@@@@@@@@@@@@@@@&:J@~:.   ${magenta}.dMP\" ${bmagenta}dMP\" VP  dMP dMP             " 
-echo "  ${white}.#@@@@@@@@@@@@@@@@@@@@@@@J^ JY:   ${magenta}.dMP\"   ${bmagenta}VMMMb   dMMMMMP               "    
-echo " ${white}:P&&&@@@@@@@@@@@@@@@@#GBP~       ${magenta}.dMP\"   ${bmagenta}dP .dMP  dMP dMP                "   
-echo " ${white}~!:::7B@@@@@##&@@@@#^.   #      ${magenta}dMMMMMP  ${bmagenta}VMMMP\"  dMP dMP  ${byellow}dMMMMMP"
-echo " ${white}?P ${red}♁${white} :@@@&~ ..^!YB#^ . "         
-echo " ${white}P&??. ~7B@&. ${red}.⛢.${white}  :7!""    ${blue}Hardware: ${bblue}$(sysctl -n hw.model) ${blue}OS: ${bblue}$(sw_vers -productName) $(sw_vers -productVersion)" # Hardware and OS info
-echo "${white}:#&@B~7: \Y@~ .${red}\`${white}   .#@7""   ${blue}CPU: ${bblue}$(sysctl -n machdep.cpu.brand_string) ${blue}Memory: ${bblue}$(sysctl hw.memsize | awk '{print $2/1073741824" GB RAM"}')"        
-echo " ${white}:!PY5?  \`.G&5BBG7J7P@@7 ""   ${blue}User: ${bblue}$(whoami) ${blue}Shell: ${bblue}$(basename $SHELL)"  # User, Shell, and Uptime info
-echo "   ${white}.5@Y ;  :@@P555B@@@P   ""  ${blue}Network: ${bblue}$(networksetup -getcomputername)" # Network and Brew packages info
-echo "     ${white}5@G?J!J@B!:  ^G5J^   ""  ${blue}Diskspace: ${bblue}$(df -h / | awk 'NR==2 {print $4 " available"}' | sed 's/Gi/GB/')" 
-echo "     ${white}~PB#&@BJ~^:          ""  ${blue}Uptime: ${bblue}$(uptime | awk -F'up ' '{print $2}' | cut -d',' -f1-2)"
-echo "       ${white}...7.              ""  ${blue}Packages: ${bblue}$(brew list | wc -l | tr -d ' ')"
-# Print two lines with the 16 main terminal background colors as blocks
-echo "                              "
-echo "                              ""${BG_WHITE}     ${RESET}${BG_MAGENTA}     ${RESET}${BG_RED}     ${RESET}${BG_YELLOW}     ${RESET}${BG_BLUE}     ${RESET}${BG_CYAN}     ${RESET}${BG_GREEN}     ${RESET}${BG_BLACK}     ${RESET}"
-echo "                              ""${BG_BWHITE}     ${RESET}${BG_BMAGENTA}     ${RESET}${BG_BRED}     ${RESET}${BG_BYELLOW}     ${RESET}${BG_BBLUE}     ${RESET}${BG_BCYAN}     ${RESET}${BG_BGREEN}     ${RESET}${BG_BBLACK}     ${RESET}"
+echo "               ${white}.:^~~~~~^:            "           
+echo "           ${white}^7YG#&@@@@@@@&B57:        ""       ${magenta}dMMMMMP ${bmagenta}.dMMMb   dMP dMP           "
+echo "        ${white}^JB@@@@@@@@@@@@@@@@@&G7.     ""        ${magenta}.dMP\" ${bmagenta}dMP\" VP  dMP dMP          "
+echo "      ${white}^5@@@@@@@@@@@@@@@@@@@@@@@B7    ""      ${magenta}.dMP\"   ${bmagenta}VMMMb   dMMMMMP            "
+echo "     ${white}J@@@@@@@@@@@@@@@@@@@@@@@@@@@5   ""    ${magenta}.dMP\"   ${bmagenta}dP .dMP  dMP dMP             "
+echo "    ${white}5@@@@@@@@@@@@@@@@@@@@@@@@#B&B@~  ""  ${magenta}dMMMMMP  ${bmagenta}VMMMP\"  dMP dMP  ${byellow}dMMMMMP"
+echo "   ${white}?@@@@@@@@@@@@@@@@@@@@@@@@&:J@~:.  "                           
+echo "  ${white}.#@@@@@@@@@@@@@@@@@@@@@@@J^ JY:  "                     "${blue}Hardware: ${bblue}$(sysctl -n hw.model) ${blue}OS: ${bblue}$(sw_vers -productName) $(sw_vers -productVersion)" # Hardware and OS info"
+echo " ${white}:P&&&@@@@@@@@@@@@@@@@#GBP~        "                     "${blue}CPU: ${bblue}$(sysctl -n machdep.cpu.brand_string) ${blue}Memory: ${bblue}$(sysctl hw.memsize | awk '{print $2/1073741824" GB RAM"}')"
+echo " ${white}~!:::7B@@@@@##&@@@@#^.   #        "                     "${blue}User: ${bblue}$(whoami) ${blue}Shell: ${bblue}$(basename $SHELL)"  # User, Shell, and Uptime info
+echo " ${white}?P ${red}♁${white} :@@@&~ ..^!YB#^ .          "         "${blue}Network: ${bblue}$(networksetup -getcomputername)" # Network and Brew packages info
+echo " ${white}P&??. ~7B@&. ${red}.⛢.${white}  :7!           "         "${blue}Diskspace: ${bblue}$(df -h / | awk 'NR==2 {print $4 " available"}' | sed 's/Gi/GB/')"
+echo "${white}:#&@B~7: \Y@~ .${red}\`${white}   .#@7          "        "${blue}Uptime: ${bblue}$(uptime | awk -F'up ' '{print $2}' | cut -d',' -f1-2)"
+echo " ${white}:!PY5?  \`.G&5BBG7J7P@@7           "                    "${blue}Packages: ${bblue}$(brew list | wc -l | tr -d ' ')"
+echo "   ${white}.5@Y ;  :@@P555B@@@P             "                                                          
+echo "     ${white}5@G?J!J@B!:  ^G5J^             " "${BG_WHITE}     ${RESET}${BG_MAGENTA}     ${RESET}${BG_RED}     ${RESET}${BG_YELLOW}     ${RESET}${BG_BLUE}     ${RESET}${BG_CYAN}     ${RESET}${BG_GREEN}     ${RESET}${BG_BLACK}     ${RESET}"                                                  
+echo "     ${white}~PB#&@BJ~^:                    " "${BG_BWHITE}     ${RESET}${BG_BMAGENTA}     ${RESET}${BG_BRED}     ${RESET}${BG_BYELLOW}     ${RESET}${BG_BBLUE}     ${RESET}${BG_BCYAN}     ${RESET}${BG_BGREEN}     ${RESET}${BG_BBLACK}     ${RESET}"                                                                
+echo "       ${white}...7.                        "                                                     
 echo "                              "
 echo "                              "
 # Color variables with background colors
