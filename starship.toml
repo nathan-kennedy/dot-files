@@ -194,10 +194,11 @@ format = '[ $time ]($style)'
 
 [status]
 style = "bg:black"
-symbol = '❌'
+symbol = ''
 success_symbol = '✓'
 not_executable_symbol = ''
 not_found_symbol = '󰦀'
+sigint_symbol = '󰚌'
 format = '[ $symbol ]($style)'
 map_symbol = true
 disabled = false

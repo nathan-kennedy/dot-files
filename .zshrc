@@ -1,6 +1,6 @@
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
 
-# Load version control information for use in the prompt
+# Loads version control information for use in the prompt
 autoload -Uz vcs_info
 precmd() { vcs_info }
 
@@ -22,7 +22,7 @@ setopt AUTO_CD
 # Load and initialize the completion system, providing options and file paths predictions
 autoload -Uz compinit
 compinit
-_comp_options+=(globdots) #incluse hidden files
+_comp_options+=(globdots) #include hidden files
 
 # Load syntax highlighting, which provides different coloring for commands, options, paths, etc.
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
