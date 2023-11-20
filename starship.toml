@@ -30,9 +30,9 @@ $docker_context\
 $memory_usage\
 [](fg:green bg:bright-green)\
 $time\
-[](fg:bright-green bg:bright-black)\
+[](fg:bright-green bg:black)\
 $status\
-[ ](fg:bright-black)\
+[ ](fg:black)\
 """
 
 # Disable the blank line at the start of the prompt
@@ -131,7 +131,7 @@ style = "bg:bright-blue"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:bright-blue"
+style = "fg:red bg:bright-blue"
 format = '[$all_status$ahead_behind$up_to_date ]($style)'
 up_to_date = '✓'
 
@@ -193,9 +193,9 @@ style = "bg:bright-green"
 format = '[ $time ]($style)'
 
 [status]
-style = "bg:bright-black"
-symbol = '󰬟'
-success_symbol = ''
+style = "bg:black"
+symbol = '❌'
+success_symbol = '✓'
 not_executable_symbol = ''
 not_found_symbol = '󰦀'
 format = '[ $symbol ]($style)'
