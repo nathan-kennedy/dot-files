@@ -38,9 +38,8 @@ echo "       \033[1;0m...7.                ""\033[1;36mPackages:\033[34m $(brew 
 
 
 # Print a line with the 8 main terminal background colors as blocks
-echo -e "         T                  ""${BG_WHITE}    ${RESET}${BG_MAGENTA}    ${RESET}${BG_RED}    ${RESET}${BG_YELLOW}    ${RESET}${BG_BLUE}    ${RESET}${BG_CYAN}    ${RESET}${BG_GREEN}    ${RESET}${BG_BLACK}    ${RESET}"
-echo -e "         .                  ""${BG_BWHITE}    ${RESET}${BG_BMAGENTA}    ${RESET}${BG_BRED}    ${RESET}${BG_BYELLOW}    ${RESET}${BG_BBLUE}    ${RESET}${BG_BCYAN}    ${RESET}${BG_BGREEN}    ${RESET}${BG_BBLACK}    ${RESET}"
+echo -e "                            "
+echo -e "                            ""${BG_WHITE}     ${RESET}${BG_MAGENTA}     ${RESET}${BG_RED}     ${RESET}${BG_YELLOW}     ${RESET}${BG_BLUE}     ${RESET}${BG_CYAN}     ${RESET}${BG_GREEN}     ${RESET}${BG_BLACK}     ${RESET}"
+echo -e "                            ""${BG_BWHITE}     ${RESET}${BG_BMAGENTA}     ${RESET}${BG_BRED}     ${RESET}${BG_BYELLOW}     ${RESET}${BG_BBLUE}     ${RESET}${BG_BCYAN}     ${RESET}${BG_BGREEN}     ${RESET}${BG_BBLACK}     ${RESET}"
 echo -e "   "
-echo -e "   "
-echo -e "\033[0m\033[1;37mWelcome, $USER! Today is\033[1;32m $(date +"%a %b %e")\033[1;37m\033[0m Happy coding!\033[0m"
 echo -e "   "
