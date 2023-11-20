@@ -1,4 +1,4 @@
-# Dot-files for zsh 💻
+# Dot-files for Zsh 💻
 
 ### MotD
 
