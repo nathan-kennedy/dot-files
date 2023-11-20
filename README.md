@@ -1,5 +1,7 @@
 # Dot-files for Zsh 💻
 
+If you're looking for a souped up Zshell with lots of awesome tools and decorations, look no further. If you're not into oh-my-zsh because you think it's bloated and offers way more than you actually need, look no further. I don't have a snazzy name for any of this. These are just my dot files, but I did put in a bunch of work trying to do what oh-my-zsh does without using oh-my-zsh, because after initially using omz I was really disappointed. I spent quite a while making everything pretty only to realize my prompt tool over 4 seconds to load... Uh, no. So will the hours I spent doing everything manually make up for the seconds I'll save every time I load Zsh? Perhaps not, but maybe if enough people use these dot files then at some point the time saved will have been worth the effort. Enjoy! 😁
+
 ### MotD
 
 _This took way longer than it should have, but I like the result, hope you do too. The terminal window needs to be pretty small width-wise before the formatting is broken so there shouldn't be any problems there. 👍_
@@ -72,19 +74,19 @@ _If my skull ascii is too much you could always change the .zshrc to load neofet
 **_png2webp_** = .png conversion to .webp  
 **_webp2jpg_** = .webp conversion to .jpg  
 **_webp2png_** = .webp conversion to .png  
-**_pdf2jpg_** = .png coversion to .jpg  
+**_pdf2jpg_** = .png conversion to .jpg  
 **_vector2png_** = .ai, .eps, or .svg conversion to .png  
 **_heic2jpg_** = Apple's latest HEIC image conversion to .jpg  
 **_optjpg_** = optimize all .jpg's in a directory  
-**_optpng_** = optimizw all .png's in a directory
+**_optpng_** = optimize all .png's in a directory
 
-### Miscelaneous
+### Miscellaneous
 
 **_symlink_** = creates a backup of a directory and then creates a symlink of the directory with the original name
 
 ## Starship prompt configuration file
 
-I've set up the starship.toml config file to have the prompt look like the powerline prompt. I've set it up using iterm2 so the colors may be broken on an other terminal app. Also 'magenta' wasn't working for some reason. Not sure if it's a bug with starship or with iterm2. I got around it by hard-coding the color with a hex color.
+I've set up the starship.toml config file to have the prompt look like the powerline prompt. I've set it up using iTerm2 so the colors may be broken on an other terminal app. Also 'magenta' wasn't working for some reason. Not sure if it's a bug with starship or with iTerm2. I got around it by hard-coding the color with a hex color.
 
 ![prompt image](/assets/prompt.png)
 
@@ -111,6 +113,6 @@ _Result_
 
 ## iTerm2 color presets file
 
-The file, zsh-colors.itermcolors, is to load the colors I use into iTerm2. Feel free to use your own, but I figured I'd include this as well to avoid any legibility or contrast issues on your machine. The less tweaking the better right? Just import them from this 'color presets' smenu in iTerm2 settings.
+The file, zsh-colors.itermcolors, is to load the colors I use into iTerm2. Feel free to use your own, but I figured I'd include this as well to avoid any legibility or contrast issues on your machine. The less tweaking the better right? Just import them from this 'color presets' menu in iTerm2 settings.
 
 ![iTerm2 color palette import image](/assets/iterm-colors.png)
