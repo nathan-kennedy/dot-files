@@ -4,9 +4,9 @@
 
 _This took way longer than it should have, but I like the result, hope you do too. The terminal window needs to be pretty small width-wise before the formatting is broken so there shouldn't be any problems there. 👍_
 
-![alt text](/assets/motd-screen.png)
+![terminal screenshot with custom motd(neofetch inspired)](/assets/motd-screen.png)
 _If my skull ascii is too much you could always change the .zshrc to load neofetch install, or do what I do, use both. I have the motd set to load when I use the 'r' alias and I have neofetch set to load when I clear the screen with the 'c' alias. Of course, you can always &lt;control&gt;+l if you want neither._
-![alt text](/assets/neofetch.png)
+![terminal screenshot with neofetch displayed](/assets/neofetch.png)
 
 ### Aliases
 
@@ -84,6 +84,8 @@ _If my skull ascii is too much you could always change the .zshrc to load neofet
 
 I've set up the starship.toml config file to have the prompt look like the powerline prompt. I've set it up using iterm2 so the colors may be broken on an other terminal app. Also 'magenta' wasn't working for some reason. Not sure if it's a bug with starship or with iterm2. I got around it by hard-coding the color with a hex color.
 You'll want these two lines at the bottom of your .zshrc:
+
+![prompt image](/assets/prompt.png)
 
 ```zsh
 export STARSHIP_CONFIG=~/path/to/starship.toml
