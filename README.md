@@ -82,18 +82,20 @@ _If my skull ascii is too much you could always change the .zshrc to load neofet
 
 ## Starship configuration file
 
-I've set up the starship.toml config file to have the prompt look like the powerline prompt. I've set it up using iterm2 so the colors may be broken on an other terminal app. Also 'magenta' wasn't working for some reason. Not sure if it's a bug with starship or with iterm2. I got around it by hard-coding the color with a hex color. Also, this is obviously overboard for some people. You can simply delete the sections you don't want from the 'format' block at the top of 'starship.toml'. You don't have to worry about deleting formatting and styling blocks lower in the file.
-Example - delete these lines for a minimalist prompt with only the user name, directories, git branch & status, and last-command status:
+![prompt image](/assets/prompt.png)
 
-![lines to delete in starship.toml file for minimalist prompt](/assets/minimal.png)
+I've set up the starship.toml config file to have the prompt look like the powerline prompt. I've set it up using iterm2 so the colors may be broken on an other terminal app. Also 'magenta' wasn't working for some reason. Not sure if it's a bug with starship or with iterm2. I got around it by hard-coding the color with a hex color.
 
 You'll want these two lines at the bottom of your .zshrc:
-
-![prompt image](/assets/prompt.png)
 
 ```zsh
 export STARSHIP_CONFIG=~/path/to/starship.toml
 eval "$(starship init zsh)"
 ```
+
+This is obviously overboard for some people. You can simply delete the sections you don't want from the 'format' block at the top of 'starship.toml'. You don't have to worry about deleting formatting and styling blocks lower in the file.
+Example - delete these lines for a minimalist prompt with only the user name, directories, git branch & status, and last-command status:
+
+![lines to delete in starship.toml file for minimalist prompt](/assets/minimal.png)
 
 If you're using my 'new-mac-setup' script, it will automatically retrieve my dot files and so the lines will be there but since my actual dot files are in this repo the 'path/to/starship.toml' is a symlink and you'll want to change that anyway. For reference my symlink is in `~/.config/starship/starship.toml`.
