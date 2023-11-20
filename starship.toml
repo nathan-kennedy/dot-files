@@ -60,7 +60,7 @@ style = "bg:bright-red"
 format = '[ $indicator ]($style)'
 
 [[battery.display]]
-threshold = 60
+threshold = 40
 style = "bg:bright-yellow"
 
 [battery]
@@ -181,7 +181,7 @@ format = '[ $symbol ($version) ]($style)'
 
 [memory_usage]
 disabled = false
-threshold = 20
+threshold = 65
 symbol = '󰍛'
 style = "bg:green"
 format = '[ $symbol $ram_pct ]($style)'
