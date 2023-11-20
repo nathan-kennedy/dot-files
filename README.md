@@ -102,3 +102,7 @@ This is obviously overboard for some people. You can simply delete the sections 
 _Example_ Delete these lines for a minimalist prompt with only the user name, directories, git branch & status, and last-command status:
 
 ![lines to delete in starship.toml file for minimalist prompt](/assets/minimal.png)
+
+_Result_
+
+![mini prompt example](/assets/mini-prompt.png)
