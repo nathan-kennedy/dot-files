@@ -1,12 +1,12 @@
 format = """
 $os\
-[](bg:red fg:#c42d93)\
+[](fg:#d455d6 bg:bright-red)\
 $shell\
-[](bg:bright-red fg:red)\
+[](fg:bright-red bg:bright-yellow)\
 $battery\
-[](bg:yellow fg:bright-red)\
+[](fg:bright-yellow bg:yellow)\
 $username\
-[](bg:blue fg:yellow)\
+[](fg:yellow bg:blue)\
 $directory\
 [](fg:blue bg:bright-blue)\
 $git_branch\
@@ -50,18 +50,18 @@ disabled = false
 # An alternative to the username module which displays a symbol that
 # represents the current operating system
 [os]
-style = "bg:#c42d93"
+style = "bg:#d455d6"
 format = '[  ]($style)'
 disabled = false # Disabled by default
 
 [shell]
 disabled = false
-style = "bg:red"
+style = "bg:bright-red"
 format = '[ $indicator ]($style)'
 
 [[battery.display]]
-threshold = 85
-style = "bg:bright-red"
+threshold = 40
+style = "bg:bright-yellow"
 
 [battery]
 charging_symbol = ''
@@ -181,7 +181,7 @@ format = '[ $symbol ($version) ]($style)'
 
 [memory_usage]
 disabled = false
-threshold = 30
+threshold = 65
 symbol = '󰍛'
 style = "bg:green"
 format = '[ $symbol $ram_pct ]($style)'
