@@ -108,3 +108,9 @@ _Example_ Delete these lines for a minimalist prompt with only the user name, di
 _Result_
 
 ![mini prompt example](/assets/mini-prompt.png)
+
+## iTerm2 color palette file
+
+zsh-colors.itermcolors is to load the colors I use into iTerm2. Feel free to use your own colors, but I figured I'd include this as well to avoid any legibility or contrast issues on your machine. The less tweaking the better right? Just import them from this menu in iTerm2 settings.
+
+![iTerm2 color palette import image](/assets/iterm-colors.png)
