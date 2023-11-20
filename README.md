@@ -98,6 +98,7 @@ If you're using my 'new-mac-setup' script, it will automatically retrieve my dot
 ### Where's my minimalist prompt? 🧐
 
 This is obviously overboard for some people. You can simply delete the sections you don't want from the 'format' block at the top of 'starship.toml'. You don't have to worry about deleting formatting and styling blocks lower in the file.
-Example - delete these lines for a minimalist prompt with only the user name, directories, git branch & status, and last-command status:
+
+_Example_ Delete these lines for a minimalist prompt with only the user name, directories, git branch & status, and last-command status:
 
 ![lines to delete in starship.toml file for minimalist prompt](/assets/minimal.png)
