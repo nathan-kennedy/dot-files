@@ -86,30 +86,30 @@ I've set up the starship.toml config file to have the prompt look like the power
 Example - delete these lines for a minimalist prompt:
 
 `$os\  
-[\](fg:#d455d6 bg:bright-red)\  
-\$shell\  
-[\](fg:bright-red bg:bright-yellow)\  
-\$battery\  
-[\](fg:bright-yellow bg:yellow)\  
-\$c\  
-\$elixir\  
-\$elm\  
-\$golang\  
-\$gradle\  
-\$haskell\  
-\$java\  
-\$julia\  
-\$nodejs\  
-\$nim\  
-\$rust\  
-\$scala\  
-[\](fg:bright-cyan bg:cyan)\  
-\$docker_context\  
-[\](fg:cyan bg:green)\  
-\$memory_usage\  
-[\](fg:green bg:bright-green)\  
-\$time\  
-[\](fg:bright-green bg:black)\`
+[](fg:#d455d6 bg:bright-red)\  
+$shell\  
+[](fg:bright-red bg:bright-yellow)\  
+$battery\  
+[](fg:bright-yellow bg:yellow)\  
+$c\  
+$elixir\  
+$elm\  
+$golang\  
+$gradle\  
+$haskell\  
+$java\  
+$julia\  
+$nodejs\  
+$nim\  
+$rust\  
+$scala\  
+[](fg:bright-cyan bg:cyan)\  
+$docker_context\  
+[](fg:cyan bg:green)\  
+$memory_usage\  
+[](fg:green bg:bright-green)\  
+$time\  
+[](fg:bright-green bg:black)\`
 
 You'll want these two lines at the bottom of your .zshrc:
 
