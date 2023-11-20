@@ -3,7 +3,7 @@ echo "           ${white}^7YG#&@@@@@@@&B57:        ""       ${magenta}dMMMMMP ${
 echo "        ${white}^JB@@@@@@@@@@@@@@@@@&G7.     ""        ${magenta}.dMP\" ${bmagenta}dMP\" VP  dMP dMP          "
 echo "      ${white}^5@@@@@@@@@@@@@@@@@@@@@@@B7    ""      ${magenta}.dMP\"   ${bmagenta}VMMMb   dMMMMMP            "
 echo "     ${white}J@@@@@@@@@@@@@@@@@@@@@@@@@@@5   ""    ${magenta}.dMP\"   ${bmagenta}dP .dMP  dMP dMP             "
-echo "    ${white}5@@@@@@@@@@@@@@@@@@@@@@@@#B&B@~  ""  ${magenta}dMMMMMP  ${bmagenta}VMMMP\"  dMP dMP  ${byellow}dMMMMMP"
+echo "    ${white}5@@@@@@@@@@@@@@@@@@@@@@@@#B&B@~  ""   ${magenta}dMMMMMP  ${bmagenta}VMMMP\"  dMP dMP  ${byellow}dMMMMMP"
 echo "   ${white}?@@@@@@@@@@@@@@@@@@@@@@@@&:J@~:.  "                           
 echo "  ${white}.#@@@@@@@@@@@@@@@@@@@@@@@J^ JY:  "                     "${blue}Hardware: ${bblue}$(sysctl -n hw.model) ${blue}OS: ${bblue}$(sw_vers -productName) $(sw_vers -productVersion)" # Hardware and OS info"
 echo " ${white}:P&&&@@@@@@@@@@@@@@@@#GBP~        "                     "${blue}CPU: ${bblue}$(sysctl -n machdep.cpu.brand_string) ${blue}Memory: ${bblue}$(sysctl hw.memsize | awk '{print $2/1073741824" GB RAM"}')"
