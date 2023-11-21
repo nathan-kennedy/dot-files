@@ -2,9 +2,9 @@
 
 If you're looking for a souped up Zshell with lots of awesome tools and decorations, look no further. If you're not into oh-my-zsh because you think it's bloated and offers way more than you actually need, look no further. I don't have a snazzy name for any of this. These are just my dot files, but I did put in a bunch of work trying to do what oh-my-zsh does without using oh-my-zsh, because after initially using omz I was really disappointed. I spent quite a while making everything pretty only to realize my prompt tool over 4 seconds to load... Uh, no. So will the hours I spent doing everything manually make up for the seconds I'll save every time I load Zsh? Perhaps not, but maybe if enough people use these dot files then at some point the time saved will have been worth the effort. Enjoy! 😁
 
-### MotD
+### MotD (Includes quote of the day from zenquotes.io)
 
-_This took way longer than it should have, but I like the result, hope you do too. The terminal window needs to be pretty small width-wise before the formatting is broken so there shouldn't be any problems there. 👍_
+_This took way longer than it should have, but I like the result, hope you do too. The terminal window needs to be pretty small width-wise before the formatting is broken so there shouldn't be any problems there. The quote of the day loads from the .zshrc file with a simple curl command. No API key is requited.'Jq' JSON parser (automatically installed with my 'new-mac-setup script) is a prerequisite to reading the API output though.👍_
 
 ![terminal screenshot with custom motd(neofetch inspired)](/assets/motd-screen.png)
 
@@ -83,6 +83,7 @@ _If my skull ascii is too much you could always change the .zshrc to load neofet
 ### Miscellaneous
 
 **_symlink_** = creates a backup of a directory and then creates a symlink of the directory with the original name
+**_makegif_** = creates an optimized gif from a full-length video. You can run it by calling 'makegif' and following the prompts or you can use it immediately by inputting all the correct arguments when you call the script.
 
 ## Starship prompt configuration file
 
