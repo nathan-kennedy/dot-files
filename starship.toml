@@ -205,4 +205,4 @@ not_found_symbol = '󰦀'
 sigint_symbol = '󰚌'
 format = '[ $symbol ]($style)'
 map_symbol = true
-disabled = false
+disabled = false 
