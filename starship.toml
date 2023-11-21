@@ -82,8 +82,12 @@ truncation_symbol = "…/"
 [directory.substitutions]
 "Documents" = " 󰈙 "
 "Downloads" = "  "
-"Music" = "  "
-"Pictures" = "   "
+"Music" = " 󰝚 "
+"Movies" = " 󰨜 "
+"Pictures" = "  "
+"Public" = "  "
+"Desktop" = "  "
+"Applications" = "  "
 # Keep in mind that the order matters. For example:
 # "Important Documents" = " 󰈙 "
 # will not be replaced, because "Documents" was already substituted before.
@@ -131,7 +135,7 @@ style = "bg:bright-blue"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "fg:red bg:bright-blue"
+style = "fg:blue bg:bright-blue"
 format = '[$all_status$ahead_behind$up_to_date ]($style)'
 up_to_date = '✓'
 
@@ -195,7 +199,7 @@ format = '[ $time ]($style)'
 [status]
 style = "bg:black"
 symbol = ''
-success_symbol = '✓'
+success_symbol = ''
 not_executable_symbol = ''
 not_found_symbol = '󰦀'
 sigint_symbol = '󰚌'

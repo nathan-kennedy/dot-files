@@ -90,6 +90,10 @@ I've set up the starship.toml config file to have the prompt look like the power
 
 ![prompt image](/assets/prompt.png)
 
+Dynamic icons! 🥹
+
+![prompt icons examples](/assets/prompt-icons.png)
+
 You'll want these two lines at the bottom of your .zshrc:
 
 ```zsh
