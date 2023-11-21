@@ -62,3 +62,7 @@ source ~/.zsh/.alias.sh     # Load a custom aliases script
 source ~/.zsh/.functions.sh # Load a custom functions script
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
+# Fetch and display Quote of the Day
+quote_of_the_day=$(curl -s "https://zenquotes.io/api/today" | jq -r '.[0].q')
+echo "${bwhite}Quote of the day:${yellow}$quote_of_the_day"
+echo ""
