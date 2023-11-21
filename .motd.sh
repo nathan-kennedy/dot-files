@@ -36,13 +36,13 @@ bcyan="\u001b[96;1m"
 bwhite="\u001b[97;1m"
 reset="\u001b[0m"
 echo "               ${white}.:^~~~~~^:            "           
-echo "           ${white}^7YG#&@@@@@@@&B57:        ""       ${magenta}dMMMMMP  ${bmagenta}.dMMMb   dMP dMP           "
-echo "        ${white}^JB@@@@@@@@@@@@@@@@@&G7.     ""        ${magenta}.dMP\"  ${bmagenta}dMP\" VP  dMP dMP          "
-echo "      ${white}^5@@@@@@@@@@@@@@@@@@@@@@@B7    ""      ${magenta}.dMP\"    ${bmagenta}VMMMb   dMMMMMP            "
-echo "     ${white}J@@@@@@@@@@@@@@@@@@@@@@@@@@@5   ""    ${magenta}.dMP\"    ${bmagenta}dP .dMP  dMP dMP             "
+echo "           ${white}^7YG#&@@@@@@@&B57:        ""       ${magenta}dMMMMMP  ${bmagenta}.dMMMb   dMP dMP   "
+echo "        ${white}^JB@@@@@@@@@@@@@@@@@&G7.     ""        ${magenta}.dMP\"  ${bmagenta}dMP\" VP  dMP dMP  "
+echo "      ${white}^5@@@@@@@@@@@@@@@@@@@@@@@B7    ""      ${magenta}.dMP\"    ${bmagenta}VMMMb   dMMMMMP    "
+echo "     ${white}J@@@@@@@@@@@@@@@@@@@@@@@@@@@5   ""    ${magenta}.dMP\"    ${bmagenta}dP .dMP  dMP dMP     "
 echo "    ${white}5@@@@@@@@@@@@@@@@@@@@@@@@#B&B@~  ""   ${magenta}dMMMMMP   ${bmagenta}VMMMP\"  dMP dMP  ${byellow}dMMMMMP"
 echo "   ${white}?@@@@@@@@@@@@@@@@@@@@@@@@&:J@~:.  "                           
-echo "  ${white}.#@@@@@@@@@@@@@@@@@@@@@@@J^ JY:  "                     "${blue}Hardware: ${bblue}$(sysctl -n hw.model) ${blue}OS: ${bblue}$(sw_vers -productName) $(sw_vers -productVersion)" # Hardware and OS info"
+echo "  ${white}.#@@@@@@@@@@@@@@@@@@@@@@@J^ JY:  "                     "${blue}Hardware: ${bblue}$(sysctl -n hw.model) ${blue}OS: ${bblue}$(sw_vers -productName) $(sw_vers -productVersion)" # Hardware and OS info
 echo " ${white}:P&&&@@@@@@@@@@@@@@@@#GBP~        "                     "${blue}CPU: ${bblue}$(sysctl -n machdep.cpu.brand_string) ${blue}Memory: ${bblue}$(sysctl hw.memsize | awk '{print $2/1073741824" GB RAM"}')"
 echo " ${white}~!:::7B@@@@@##&@@@@#^.   #        "                     "${blue}User: ${bblue}$(whoami) ${blue}Shell: ${bblue}$(basename $SHELL)"  # User, Shell, and Uptime info
 echo " ${white}?P ${red}♁${white} :@@@&~ ..^!YB#^ .          "         "${blue}Network: ${bblue}$(networksetup -getcomputername)" # Network and Brew packages info
