@@ -83,7 +83,7 @@ _If my skull ascii is too much you could always change the .zshrc to load neofet
 ### Miscellaneous
 
 **_symlink_** = creates a backup of a directory and then creates a symlink of the directory with the original name
-**_makegif_** = creates an optimized gif from a full-length video. You can run it by calling 'makegif' and following the prompts or you can use it immediately by inputting all the correct arguments when you call the script.
+**_makegif_** = creates an optimized gif from any segment of a full-length video. You can run it by calling 'makegif' and following the prompts or you can use it immediately by inputting all the correct arguments when you call the script.
 
 ## Starship prompt configuration file
 
