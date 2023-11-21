@@ -8,7 +8,7 @@ _This took way longer than it should have, but I like the result, hope you do to
 
 ![terminal screenshot with custom motd(neofetch inspired)](/assets/motd-screen.png)
 
-_If my skull ascii is too much you could always change the .zshrc to load neofetch install, or do what I do, use both. I have the motd set to load when I use the 'r' alias and I have neofetch set to load when I clear the screen with the 'c' alias. Of course, you can always &lt;control&gt;+l if you want neither._
+_If my skull ascii is too much you could always change the .zshrc to load neofetch instead, or do what I do, use both. I have the motd set to load when I use the 'r' alias and I have neofetch set to load when I clear the screen with the 'c' alias. Of course, you can always &lt;control&gt;+l if you want neither._
 
 ![terminal screenshot with neofetch displayed](/assets/neofetch.png)
 
