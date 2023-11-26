@@ -91,3 +91,13 @@ function optpng() {
 }
 
 source ~/git_repos/makegif/makegif.sh
+
+# Searching the web
+
+function ddg () {
+	brave "https://www.duckduckgo.com/?q=$1"
+}
+
+function google () {
+	brave "https://www.google.com/search?q=$1"
+}
