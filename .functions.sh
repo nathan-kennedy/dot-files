@@ -101,3 +101,7 @@ function ddg () {
 function google () {
 	brave "https://www.google.com/search?q=$1"
 }
+
+function youtube () {
+	brave "https://www.youtube.com/results?search_query=$1"
+}
