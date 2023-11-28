@@ -48,7 +48,7 @@ echo "               ${white}.:^mmmmm^:              ""    ${magenta}dMMMMMP  ${
 echo "           ${white}^7YG#&@@@@@@@&B57:          ""     ${magenta}.dMP\"  ${bmagenta}dMP\" VP  dMP dMP  "
 echo "        ${white}^JB@@@@@@@@@@@@@@@@@&G7.       ""   ${magenta}.dMP\"    ${bmagenta}VMMMb   dMMMMMP    "
 echo "      ${white}^5@@@@@@@@@@@@@@@@@@@@@@@B7      "" ${magenta}.dMP\"    ${bmagenta}dP .dMP  dMP dMP     "
-echo "     ${white}J@@@@@@@@@@@@@@@@@@@@@@@@@@@5     ""${magenta}dMMMMMP  ${bmagenta}VMMMP\"   dMP dMP  ${bblack}dMMMMMMP"
+echo "     ${white}J@@@@@@@@@@@@@@@@@@@@@@@@@@@5     ""${magenta}dMMMMMP  ${bmagenta}VMMMP\"   dMP dMP  ${bcyan}dMMMMMMP"
 echo "    ${white}5@@@@@@@@@@@@@@@@@@@@@@@@#B&B@~    ""${blue}Hardware: ${bblue}$(sysctl -n hw.model)" # Hardware
 echo "   ${white}?@@@@@@@@@@@@@@@@@@@@@@@@&:J@~:.    ""${blue}OS: ${bblue}$(sw_vers -productName) $(sw_vers -productVersion)" # OS
 echo "  ${white}.#@@@@@@@@@@@@@@@@@@@@@@@J^ JY:      ""${blue}CPU: ${bblue}$(sysctl -n machdep.cpu.brand_string) ${blue}" # CPU
