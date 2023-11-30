@@ -48,6 +48,8 @@ alias notes="cd '$HOME/Documents/Logseq-git/Logseq-PKB'"
 alias repos="cd ~/git_repos"
 #Trash uses Finder trash instead of sysrem API to esure 'allow putback'
 alias trash='trash -F'
+#Tells you the password for the connected wifi, assuming you've already entered it at some point
+alias password='wifi-password'
 #Flush DNS cache - password needed
 alias dnsflush='sudo killall -HUP mDNSResponder && sudo killall mDNSResponderHelper && sudo dscacheutil -flushcache'
 #open zshrc config and MOTD in VS Code
