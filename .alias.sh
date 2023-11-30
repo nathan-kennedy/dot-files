@@ -17,7 +17,8 @@ alias gd='git diff'
 alias rm='rm -v -I'
 alias c="clear && neofetch" 
 alias r='clear && source ~/.zshrc'
-alias greph='history | grep $1'
+alias greph='cat ~/.zsh_history | cut -f2- -d";" | sort | uniq | grep -i'
+#alias greph='history | grep $1'
 alias grepa='alias | grep $1'
 alias grep='grep --color=auto'
 alias egrep='grep -E --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
@@ -63,3 +64,11 @@ alias pscpu="ps aux | sort -nr -k 3 | head -11 | awk 'BEGIN { count=1; } NR==1 {
 ##Apps
 alias brave='open -a "Brave Browser.app"'
 alias logseq='open -a Logseq'
+alias gmail='brave https://www.gmail.com'
+alias discord='open -a Discord'
+alias signal='open -a Signal'
+alias keep='open -a Keep'
+alias gpt='open -a chatGPT'
+alias mt='open -a Monkeytype'
+alias clean='open -a CleanMyMac-MAS'
+
