@@ -135,7 +135,7 @@ style = "bg:bright-blue"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "fg:blue bg:bright-blue"
+style = "fg:black bg:bright-blue"
 format = '[$all_status$ahead_behind$up_to_date ]($style)'
 up_to_date = '✓'
 
