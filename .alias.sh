@@ -15,7 +15,7 @@ alias gc='git commit -m'
 alias gp='git push origin'
 alias gd='git diff'
 alias rm='rm -v -I'
-alias c="clear && neofetch" 
+alias c="clear && neofetch"
 alias r='clear && source ~/.zshrc'
 alias greph='cat ~/.zsh_history | cut -f2- -d";" | sort | uniq | grep -i'
 #alias greph='history | grep $1'
@@ -71,4 +71,5 @@ alias keep='open -a Keep'
 alias gpt='open -a chatGPT'
 alias mt='open -a Monkeytype'
 alias clean='open -a CleanMyMac-MAS'
-
+alias messages='open -a Messages'
+alias qb='open -a qBittorrent'
