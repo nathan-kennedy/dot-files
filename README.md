@@ -35,9 +35,9 @@ _If my skull ascii is too much you could always change the .zshrc to load neofet
 **_rmd_** = rmdir (verbose)  
 **_del_** = unsafe remove (no confirmation and recursive deletion)  
 **_rms_** = save removal (verbose with confirmation for every file)  
-**_la_** = list all files including hidden  
-**_ls_** = list w/ colors  
-**_l_** = list w/ long format, all files including hidden, and human readable byte sizes  
+**_la_** = list all files including hidden (uses ls)  
+**_ls_** = list w/ colors (uses ls)  
+**_l_** = list w/ long format, all files including hidden, and human readable byte sizes (uses ls)  
 **_ll_** = list w/ long format and human readable byte sizes (uses lsd)  
 **ld** = list only directories (uses eza)  
 **lf** = list only files (uses eza)  
