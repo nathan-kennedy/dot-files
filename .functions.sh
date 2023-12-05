@@ -129,6 +129,10 @@ funcion magnet() {
     echo -n $magnet_link | pbcopy
 }
 
+# Download torrent
+
 function dl-torrent() {
   aria2c -d /Users/nate/Downloads --bt-save-metadata=true "$(pbpaste)"
 }
+
+
