@@ -32,11 +32,11 @@ alias la='ls -A'
 alias ls='ls -G'
 alias l='ls -lah'
 #exa alias with all the fixin's
-alias ll='exa -lhaUm --icons --git --group-directories-first -s=type'
+alias ll='lsd -ALhFl --header --group-directories-first --git'
 #exa directories only alias with all the fixin's
-alias ld='exa -lhUmaD --icons --git'
+alias ld='eza -FlXhmUDa --git --no-user --color-scale-mode=gradient --no-quotes --color-scale=all --no-filesize'
 #exa files only alias with all the fixin's
-alias lf='exa -lhUmaF --icons | grep -v "/$"'
+alias lf='eza -FlXhmUfa --git --no-user --color-scale-mode=gradient --no-quotes --color-scale=all --no-filesize'
 #open aichat history in vscode
 alias chathistory='code $HOME/Library/Application\ Support/aichat/messages.md'
 #check network speed/quality
