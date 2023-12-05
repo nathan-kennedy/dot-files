@@ -129,6 +129,30 @@ funcion magnet() {
     echo -n $magnet_link | pbcopy
 }
 
+# Magnet creation with all trackers for torrents with low seed numbers
+
+function magnet-all() {
+    local infohash=$1
+
+    if [ -z "$infohash" ]; then
+        echo "Error: Please provide an info hash"
+        return 1
+    fi
+    local trackers="$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt)"
+
+    trackers=$(printf '%s' "$trackers" | awk '{ printf "&tr="; printf "%s", $0 }')
+    trackers=${trackers//:/\%3A}
+    trackers=${trackers//\//\%2F}
+
+    local magnet_link="magnet:?xt=urn:btih:$infohash$trackers"
+
+    # Print the magnet link to the terminal
+    echo $magnet_link
+
+    # And copy it to the clipboard
+    echo -n $magnet_link | pbcopy
+}
+
 # Download torrent
 
 function dl-torrent() {
