@@ -57,6 +57,12 @@ alias dnsflush='sudo killall -HUP mDNSResponder && sudo killall mDNSResponderHel
 alias zshrc='code ~/.zshrc ~/.zsh/.alias.sh ~/.zsh/.motd.sh ~/.zsh/.functions.sh'
 #simplified 'du' with nice formatting
 alias dusage="du -hd 1 | sort -hr | awk 'BEGIN { print \"SIZE     DIRECTORY\"; print \"------------------\" } { print \$1, \$2 }'"
+#enhanced disk usage tool written in Rust; more intuitive than 'du' and avoids the UI aspect of 'ncdu'
+alias dust='dust --reverse --no-percent-bars -i'
+#same as above, but for only files
+alias dustf='dust -F -d=1'
+#same as above, but for only directories
+alias dustd='dust -D -d=1'
 #full 'ps aux' output sorted by memory (less cmd args, pid, and vsz) with dashed line row separators
 alias psmem="ps aux | sort -nr -k 4 | head -11 | awk 'BEGIN { count=1; } NR==1 {print \"NO   USER               %CPU  %MEM    USAGE   COMMAND\"; print \"---- ------------------- ----- ------ ------- --------------------------------\"} NR > 1 {printf \"%-4d %-20s %-6s %-7s %-8s %s\n\", count++, \$1, \$3, \$4, \$6/1024, \$11; print \"---- ------------------- ----- ------ ------- --------------------------------\"}' | column -t"
 #full 'ps aux' output sorted by cpu (less cmd args, pid, and vsz) with dashed line row separators

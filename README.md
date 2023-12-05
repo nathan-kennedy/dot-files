@@ -54,6 +54,9 @@ _If my skull ascii is too much you could always change the .zshrc to load neofet
 **_psmem_** = list computer processes by memory use with clean formatting  
 **_pscpu_** = list computer processes by cpu use with clean formatting  
 **_dusage_** = list disk usage for items in current directory with clean formatting  
+**dust** = enhance 'du' written in rust
+**dustf** = 'dust' for files only
+**dustd** = 'dust' for directories only
 **_greph_** = grep command line history  
 **_grepa_** = grep aliases  
 **_grep_** = standard grep with colors added  
