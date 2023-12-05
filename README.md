@@ -38,9 +38,9 @@ _If my skull ascii is too much you could always change the .zshrc to load neofet
 **_la_** = list all files including hidden  
 **_ls_** = list w/ colors  
 **_l_** = list w/ long format, all files including hidden, and human readable byte sizes  
-**_ll_** = list w/ long format and human readable byte sizes  
-**ld** = list only directories  
-**lf** = list only files  
+**_ll_** = list w/ long format and human readable byte sizes (uses lsd)  
+**ld** = list only directories (uses eza)  
+**lf** = list only files (uses eza)  
 **_brave_** = open Brave browser  
 **_logseq_** = open LogSeq app  
 **_chathistory_** = open chat history for aichat (chatGPT tool for command line)  
