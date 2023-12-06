@@ -93,10 +93,10 @@ _If my skull ascii is too much you could always change the .zshrc to load neofet
 
 ### Searching the web
 
-**ddg**: search Duck Duck Go. Usage: ddg <search terms in quotes>
-**google**: search google. Usage: google <rsearch terms in quotes>
-**youtube**: search YouTube for specific terms. Usage: youtube <search terms in quotes>
-**gmailsearch**: search gmail for specific terms. Usage: gmailsearch <search terms in quotes>
+**ddg**: search Duck Duck Go. Usage: ddg <search terms in quotes>  
+**google**: search google. Usage: google <rsearch terms in quotes>  
+**youtube**: search YouTube for specific terms. Usage: youtube <search terms in quotes>  
+**gmailsearch**: search gmail for specific terms. Usage: gmailsearch <search terms in quotes>  
 
 ## Starship prompt configuration file
 
