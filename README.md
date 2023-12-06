@@ -91,6 +91,13 @@ _If my skull ascii is too much you could always change the .zshrc to load neofet
 **_makegif_** = creates an optimized gif from any segment of a full-length video. You can run it by calling 'makegif' and following the prompts or you can use it immediately by inputting all the correct arguments when you call the script.
 **torrent** = starts downloading a torrent with aria2. Usage: torrent <label> <info hash>
 
+### Searching the web
+
+**ddg**: search Duck Duck Go. Usage: ddg <search terms in quotes>
+**google**: search google. Usage: google <rsearch terms in quotes>
+**youtube**: search YouTube for specific terms. Usage: youtube <search terms in quotes>
+**gmailsearch**: search gmail for specific terms. Usage: gmailsearch <search terms in quotes>
+
 ## Starship prompt configuration file
 
 I've set up the starship.toml config file to have the prompt look like the powerline prompt. I've set it up using iTerm2 so the colors may be broken on an other terminal app. Also 'magenta' wasn't working for some reason. Not sure if it's a bug with starship or with iTerm2. I got around it by hard-coding the color with a hex color.
