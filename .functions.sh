@@ -106,57 +106,50 @@ function youtube() {
 	brave "https://www.youtube.com/results?search_query=$1"
 }
 
-# Torrent magnet creation
+# Torrent magnet creation using info hash; downloading using aria2; logging of info hash, magnet, label, and date/time
 
-funcion magnet() {
-    local infohash=$1
+function torrent() {
+    local label=$1
+    local infohash=$2
+    local base_dir="/Users/nate/Downloads/torrents"
+    local log_file="${base_dir}/log.txt"
 
-    if [ -z "$infohash" ]; then
-        echo "Error: Please provide an info hash"
+    if [ -z "$label" ] || [ -z "$infohash" ]; then
+        echo "Error: Please provide both a label and an info hash"
         return 1
     fi
-    local trackers="$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt | head -n 20)"
+
+    local trackers="$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt)"
     trackers=$(printf '%s' "$trackers" | awk '{ printf "&tr="; printf "%s", $0 }')
     trackers=${trackers//:/\%3A}
     trackers=${trackers//\//\%2F}
 
     local magnet_link="magnet:?xt=urn:btih:$infohash$trackers"
 
-    # Print the magnet link to the terminal
-    echo $magnet_link
-
-    # And copy it to the clipboard
-    echo -n $magnet_link | pbcopy
-}
-
-# Magnet creation with all trackers for torrents with low seed numbers
-
-function magnet-all() {
-    local infohash=$1
-
-    if [ -z "$infohash" ]; then
-        echo "Error: Please provide an info hash"
-        return 1
+    # Check if the info hash already exists in the log file
+    if ! grep -q "$infohash" "$log_file"; then
+        # Append the info hash, magnet link, and label to the log file
+        {
+            echo "----------------------------------------"
+            echo ""
+            echo "Label: $label"
+            echo ""
+            echo "Date: $(date +"%A %m/%d/%Y %I:%M %p")"
+            echo ""
+            echo "Info Hash: $infohash"
+            echo ""
+            echo "Magnet Link: $magnet_link"
+            echo ""
+            echo "----------------------------------------"
+            echo ""
+        } >> "$log_file"
     fi
-    local trackers="$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt)"
 
-    trackers=$(printf '%s' "$trackers" | awk '{ printf "&tr="; printf "%s", $0 }')
-    trackers=${trackers//:/\%3A}
-    trackers=${trackers//\//\%2F}
+    local target_dir="${base_dir}/${label}"
 
-    local magnet_link="magnet:?xt=urn:btih:$infohash$trackers"
+    # Create the target directory if it doesn't exist
+    mkdir -p "$target_dir"
 
-    # Print the magnet link to the terminal
-    echo $magnet_link
-
-    # And copy it to the clipboard
-    echo -n $magnet_link | pbcopy
+    # Start or resume the torrent download with aria2
+    aria2c -d "$target_dir" --bt-save-metadata=true "$magnet_link"
 }
-
-# Download torrent
-
-function dl-torrent() {
-  aria2c -d /Users/nate/Downloads --bt-save-metadata=true "$(pbpaste)"
-}
-
-
