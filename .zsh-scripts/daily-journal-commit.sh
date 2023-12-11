@@ -27,3 +27,5 @@
 
     echo "$(date): Daily Journal Script Ran via launchd."
 } &>> /Users/nate/Documents/Logseq-git/LogSeq-PKB/logs/log.txt
+
+echo $commit_message
