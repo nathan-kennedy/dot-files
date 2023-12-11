@@ -24,4 +24,4 @@ fi
 acp $commit_message
 
 # temporary log file to confirm launchd tasking is working as intended
-echo "$(date): Daily Journal Script Ran via launchd." >> /Users/nate/Documents/Logseq-git/LogSeq-PKB/logs
+echo "$(date): Daily Journal Script Ran via launchd." >> /Users/nate/Documents/Logseq-git/LogSeq-PKB/logs/
