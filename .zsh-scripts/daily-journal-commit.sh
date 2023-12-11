@@ -1,9 +1,10 @@
 #!/bin/zsh
 
-{
-    # Ensure .zshrc is loaded
-    source $HOME/.zshrc
+# Ensure .zshrc is loaded
+source $HOME/.zshrc
 
+# Remaining commands enclosed to be logged
+{
     # Get the current date
     date=$(date +"%Y_%m_%d")
 
@@ -22,10 +23,11 @@
         touch "$journal_file"
     fi
 
-    # Run your acp function with the formatted date
+    # change directory to LogSeq-PKB
+    cd <LeftMouse>/Users/nate/Documents/Logseq-git/LogSeq-PKB
+
+    # Run acp function with the formatted date
     acp $commit_message
 
     echo "$(date): Daily Journal Script Ran via launchd."
-} &>> /Users/nate/Documents/Logseq-git/LogSeq-PKB/logs/log.txt
-
-echo $commit_message
+} 2>&1 | tee -a /Users/nate/Documents/Logseq-git/LogSeq-PKB/logs/log.txt
