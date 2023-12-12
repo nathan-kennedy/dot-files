@@ -110,55 +110,6 @@ function youtube() {
 	brave "https://www.youtube.com/results?search_query=$1"
 }
 
-## Torrent magnet creation using info hash; downloading using aria2; logging of info hash, magnet, label, and date/time
-#
-#function torrent() {
-#	local label=$1
-#	local infohash=$2
-#	local base_dir="/Users/nate/Downloads/torrents"
-#	local log_file="${base_dir}/log.txt"
-#
-#	if [ -z "$label" ] || [ -z "$infohash" ]; then
-#		echo "Error: Please provide both a label and an info hash"
-#		return 1
-#	fi
-#
-#	local trackers="$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt)"
-#	trackers=$(printf '%s' "$trackers" | awk '{ printf "&tr="; printf "%s", $0 }')
-#	trackers=${trackers//:/\%3A}
-#	trackers=${trackers//\//\%2F}
-#
-#	local magnet_link="magnet:?xt=urn:btih:$infohash$trackers"
-#
-#	# Check if the info hash already exists in the log file
-#	if ! grep -q "$infohash" "$log_file"; then
-#		# Append the info hash, magnet link, and label to the log file
-#		{
-#			echo "----------------------------------------"
-#			echo ""
-#			echo "Label: $label"
-#			echo ""
-#			echo "Date: $(date +"%A %m/%d/%Y %I:%M %p")"
-#			echo ""
-#			echo "Info Hash: $infohash"
-#			echo ""
-#			echo "Magnet Link: $magnet_link"
-#			echo ""
-#			echo "----------------------------------------"
-#			echo ""
-#		} >>"$log_file"
-#	fi
-#
-#	local target_dir="${base_dir}/${label}"
-#
-#	# Create the target directory if it doesn't exist
-#	mkdir -p "$target_dir"
-#
-#	# Start or resume the torrent download with aria2
-#	aria2c -d "$target_dir" --bt-save-metadata=true "$magnet_link"
-#}
-#
-
 function torrent() {
 	local label=$1
 	local infohash=$2
