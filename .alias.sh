@@ -32,7 +32,7 @@ alias la='ls -A'
 alias ls='ls -G'
 alias l='ls -lah'
 #exa alias with all the fixin's
-alias ll='lsd -ALhFl --header --group-directories-first --git'
+alias ll='lsd -AhFl --header --group-directories-first --git'
 #exa directories only alias with all the fixin's
 alias ld='eza -FlXhmUDa --icons --git --no-user --color-scale-mode=gradient --no-quotes --color-scale=all --no-filesize'
 #exa files only alias with all the fixin's
