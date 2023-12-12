@@ -1,20 +1,14 @@
 #!/bin/zsh
 
 # Create a descriptor (number 3) pointing to the log file
-exec 3>>/Users/nate/Documents/Logseq-git/LogSeq-PKB/logs/log.txt
-
-# Ensure .zshrc is loaded
-source $HOME/.zshrc
-
-# Drop any output from loading .zshrc
-exec &>/dev/null
+exec 3>>/Users/nate/.logs/log.txt
 
 {
     # Get the current date
     date=$(date +"%Y_%m_%d")
 
     # Logseq journal directory
-    journal_dir="/Users/nate/Documents/Logseq-git/LogSeq-PKB/journals"
+    journal_dir="/Users/nate/Personal/LogSeq-PKB/journals"
 
     # Today's journal file path
     journal_file="${journal_dir}/${date}.md"
@@ -26,7 +20,7 @@ exec &>/dev/null
     fi
 
     # Change directory to the correct git repository
-    cd /Users/nate/Documents/Logseq-git/LogSeq-PKB
+    cd /Users/nate/Personal/LogSeq-PKB
 
     # Commit message
     commit_message="save $(date +"%m.%d.%y")"
@@ -38,11 +32,18 @@ exec &>/dev/null
     git diff >&3
 
     # Run acp function with the formatted date
-    acp $commit_message >&3
+    git add -A >&3
+    git commit -m "$commit_message" >&3
+    git push origin master >&3
 
     echo "$(date): Daily Journal Script Ran via launchd." >&3
     echo " " >&3
-} |& tee -a /Users/nate/Documents/Logseq-git/LogSeq-PKB/logs/log.txt
+} |& tee -a /Users/nate/.logs/log.txt
 
 # Close the file descriptor
 exec 3<&-
+
+#put computer to sleep
+pmset sleepnow
+
+
